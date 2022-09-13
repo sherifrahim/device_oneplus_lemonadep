@@ -943,11 +943,13 @@ vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.cameraextension@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|0bed32bc1b8914a214d2bbb9b46387014feb8b4a|41ff023bb72c65b38ded7f51c9be02fd9b653618
 
+# Camera libs (COS CBT)
+system/lib/libcameraservice.so|8a237599127ff183927bc444af37ab39bbb605b1
+system/lib64/libcameraservice.so|69639b4d2eaa00e27388221299322803a4bf3e5b
+system_ext/lib64/libcsextimpl.so|0b39e3a71e969e0b66f85ff338ab6c28468abe18
+
 # Camera (OSS)
-system/lib/libcameraservice.so
-system/lib64/libcameraservice.so
 system/lib64/vendor.oplus.hardware.performance@1.0.so
-system_ext/lib64/libcsextimpl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/camera.device@3.4-external-impl.so
