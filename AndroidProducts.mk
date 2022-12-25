@@ -5,7 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_lemonadep.mk
+    $(LOCAL_DIR)/derp_lemonadep.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_lemonadep-user
+    derp_lemonadep-user \
+    derp_lemonadep-userdebug \
+    derp_lemonadep-eng
