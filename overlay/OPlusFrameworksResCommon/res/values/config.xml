@@ -256,4 +256,7 @@
 
     <!-- Expose number of physical cameras -->
     <integer name="oplus_num_physical_cameras">5</integer>
+
+    <!-- Whether devices supports in-display fingerprint when screen is off -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
 </resources>
