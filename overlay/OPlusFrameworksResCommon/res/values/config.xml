@@ -251,4 +251,14 @@
          0: Left side
          1: Right side -->
     <integer name="config_alertSliderLocation">1</integer>
+
+    <!-- Expose aux camera to other packages -->
+    <string name="oplus_camera_aux_packages">com.ss.android.ugc.aweme,com.ss.android.ugc.trill,com.zhiliaoapp.musically,com.shopmoment.momentprocamera,com.blink.academy.protake,org.codeaurora.snapcam,troop.com.freedcam,net.sourceforge.opencamera,com.caddish_hedgehog.hedgecam2,com.filmic.filmicpro,com.filmic.filmicpro.test,com.filmic.firstlight</string>
+    <string name="oplus_camera_aux_packages_startwith">com.google.android.GoogleCamera</string>
+
+    <!-- Expose number of physical cameras -->
+    <integer name="oplus_num_physical_cameras">5</integer>
+
+    <!-- Whether devices supports in-display fingerprint when screen is off -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
 </resources>
