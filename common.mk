@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oplus_lahaina
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -240,7 +240,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus_lahaina
+    vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -299,10 +299,14 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libstagefrighthw
 
+# Overlays
+$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-derp
 
-# Overlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
@@ -310,16 +314,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     WifiResTarget
-
-# Overlay-qssi
-PRODUCT_PACKAGES += \
-    FrameworksResCommon \
-    OPlusWifiResCommon \
-    SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Oplus Camera
 $(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
@@ -353,7 +347,7 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.oplus_lahaina
+    vendor.lineage.powershare@1.0-service.oplus
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -383,7 +377,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
-    sensors.oplus_lahaina
+    sensors.oplus
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -406,7 +400,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/oplus
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -444,7 +439,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oplus_lahaina
+    vendor.lineage.touch@1.0-service.oplus
 
 # Update engine
 PRODUCT_PACKAGES += \
