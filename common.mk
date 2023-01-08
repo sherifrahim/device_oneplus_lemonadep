@@ -322,9 +322,9 @@ $(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/misc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
-    $(LOCAL_PATH)/configs/permissions/com.oplus.camera.unit.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.oplus.camera.unit.sdk.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus-appplatform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus-appplatform.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-oplus-camera.xml \
+    $(LOCAL_PATH)/configs/com.oplus.camera.unit.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.oplus.camera.unit.sdk.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-oplus-appplatform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus-appplatform.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-oplus-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-oplus-camera.xml \
     $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
 
 # Oplus-fwk
